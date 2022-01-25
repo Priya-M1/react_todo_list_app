@@ -1,0 +1,28 @@
+.todolistitem-div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	padding: 1rem;
+}
+.todolistitem-item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.todolistitem-complete {
+}
+.todolistitem-desc {
+	color: var(--color-b);
+	font-size: calc(2vh + 0.5rem);
+	padding: 15px;
+}
+.todolistitem-delete-button {
+	color: var(--color-e);
+	border-style: none;
+	transition: 150ms;
+}
+.todolistitem-delete-button :hover {
+	color: var(--color-e-hover);
+}

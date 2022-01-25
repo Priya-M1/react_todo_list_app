@@ -11,12 +11,14 @@ function App() {
 	const [todos, setTodos] = useState([]);
 
 	function addTodo(todo) {
-		const newTodo = {
-			id: nanoid(),
-			description: todo,
-			isComplete: false,
-		};
-		setTodos([...todos, newTodo]);
+		if (todo) {
+			const newTodo = {
+				id: nanoid(),
+				description: todo,
+				isComplete: false,
+			};
+			setTodos([...todos, newTodo]);
+		}
 	}
 
 	function handleDelete(id) {

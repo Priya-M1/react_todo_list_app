@@ -23,6 +23,7 @@ function TodoInput({ addTodo }) {
 				placeholder="add a todo"
 				onChange={handleNewTodo}
 				className="todoinput-input"
+				value={todo}
 			/>
 			<button
 				type="submit"

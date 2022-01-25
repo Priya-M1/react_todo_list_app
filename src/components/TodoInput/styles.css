@@ -6,7 +6,7 @@
 
 .todoinput-input {
 	color: var(--color-b);
-	font-size: calc(1.5vh + 0.5rem);
+	font-size: calc(2.2vh + 0.5rem);
 	background-color: var(--color-c);
 	padding: 8px 8px;
 	border-style: none;
@@ -14,5 +14,10 @@
 
 .todoinput-submit-button {
 	color: var(--color-e);
+	border-style: none;
+}
+
+.todoinput-submit-button:hover {
+	color: var(--color-e-hover);
 	border-style: none;
 }
