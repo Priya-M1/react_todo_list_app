@@ -1,5 +1,5 @@
+import "./styles.css";
 import { useState } from "react";
-import { nanoid } from "nanoid";
 
 function TodoInput({ addTodo }) {
 	const [todo, setTodo] = useState("");
@@ -17,10 +17,19 @@ function TodoInput({ addTodo }) {
 	}
 
 	return (
-		<form action="">
-			<input type="text" placeholder="add a todo" onChange={handleNewTodo} />
-			<button type="submit" onClick={handleSubmit}>
-				Add Todo
+		<form action="" className="todoinput-form">
+			<input
+				type="text"
+				placeholder="add a todo"
+				onChange={handleNewTodo}
+				className="todoinput-input"
+			/>
+			<button
+				type="submit"
+				onClick={handleSubmit}
+				className="todoinput-submit-button"
+			>
+				<i class="fa fa-plus-square fa-3x" aria-hidden="true"></i>
 			</button>
 		</form>
 	);

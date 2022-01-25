@@ -1,0 +1,8 @@
+h1 {
+	font-family: var(--font-a);
+	font-size: calc(7vh + 2rem);
+	color: var(--color-d);
+	font-weight: bolder;
+	text-align: center;
+	padding: 3%;
+}

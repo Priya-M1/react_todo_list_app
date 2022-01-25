@@ -1,0 +1,18 @@
+.todoinput-form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.todoinput-input {
+	color: var(--color-b);
+	font-size: calc(1.5vh + 0.5rem);
+	background-color: var(--color-c);
+	padding: 8px 8px;
+	border-style: none;
+}
+
+.todoinput-submit-button {
+	color: var(--color-e);
+	border-style: none;
+}

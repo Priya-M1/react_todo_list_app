@@ -10,21 +10,13 @@
 }
 
 * {
-	font-family: var(--font-a);
+	font-family: var(--font-b);
 	margin: 0;
 	padding: 0;
-	outline: 1px solid red;
+	/* outline: 1px solid red; */
 	background-color: var(--color-a);
 }
 
 body {
-	text-align: center;
-}
-
-h1 {
-	font-family: var(--font-a);
-	font-size: calc(7vh + 2rem);
-	color: var(--color-b);
-	font-weight: bolder;
 	text-align: center;
 }
