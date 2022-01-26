@@ -2,39 +2,50 @@ i {
 	background-color: var(--color-c);
 }
 
-.todolistitem-desc {
+label {
 	color: var(--color-b);
 	font-size: calc(2vh + 0.5rem);
-	padding: 15px;
+	padding: 0.2em 1em 0.2em 1em;
 	margin: 0;
 	font-weight: lighter;
 }
 .todolistitem-delete-button {
 	color: var(--color-f);
 	border-style: none;
+	margin-left: auto;
+	padding: 0.2em 1em 0.2em 1em;
 }
 .todolistitem-delete-button :hover {
 	color: var(--color-f-hover);
 }
 
 /* checkbox coding */
-
+.container-div {
+	display: flex;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	margin-left: 16rem;
+	margin-right: 16rem;
+	/* justify-content: space-between; */
+}
 .container {
 	background-color: var(--color-c);
 	display: flex;
 	border-radius: 4px;
 	align-items: center;
-	padding: 1rem;
-	margin: 0 25px 0 25px;
-	justify-content: space-between;
+	padding: 0.5rem;
+	/* justify-content: space-around; */
+}
+
+label {
+	padding: 12rem;
 }
 
 input[type="checkbox"] + label {
 	background-color: var(--color-c);
 	display: block;
-	margin: 0.2em;
 	cursor: pointer;
-	padding: 0.2em;
+	padding: 0.2em 1em 0.2em 1em;
 }
 
 input[type="checkbox"] {
@@ -42,7 +53,9 @@ input[type="checkbox"] {
 }
 
 input[type="checkbox"] + label:before {
-	content: "\2714";
+	font-family: "Font Awesome 5 Brands";
+	font-weight: 400;
+	content: "\f09a";
 	border: 0.1em solid white;
 	border-radius: 45px;
 	display: inline-block;
@@ -70,6 +83,7 @@ input[type="checkbox"]:disabled + label:before {
 	transform: scale(1);
 	border-color: #aaa;
 	text-decoration: line-through;
+	padding: 0.2em 1em 0.2em 1em;
 }
 
 input[type="checkbox"]:checked:disabled + label:before {
@@ -77,4 +91,5 @@ input[type="checkbox"]:checked:disabled + label:before {
 	background-color: var(--color-g);
 	border-color: var(--color-g);
 	text-decoration: line-through;
+	padding: 0.2em 1em 0.2em 1em;
 }

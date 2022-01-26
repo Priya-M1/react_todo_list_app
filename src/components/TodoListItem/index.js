@@ -17,7 +17,7 @@ function TodoListItem({ todo, toggleComplete, handleDelete }) {
 					onClick={() => handleDelete(todo.id)}
 					className="todolistitem-delete-button"
 				>
-					<i class="fa fa-minus-square fa-1x" aria-hidden="true"></i>
+					<i class="fa fa-minus-square fa-2x" aria-hidden="true"></i>
 				</button>
 			</div>
 		</div>
