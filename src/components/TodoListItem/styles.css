@@ -1,28 +1,80 @@
-.todolistitem-div {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 1rem;
-	padding: 1rem;
-}
-.todolistitem-item {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+i {
+	background-color: var(--color-c);
 }
 
-.todolistitem-complete {
-}
 .todolistitem-desc {
 	color: var(--color-b);
 	font-size: calc(2vh + 0.5rem);
 	padding: 15px;
+	margin: 0;
+	font-weight: lighter;
 }
 .todolistitem-delete-button {
-	color: var(--color-e);
+	color: var(--color-f);
 	border-style: none;
-	transition: 150ms;
 }
 .todolistitem-delete-button :hover {
-	color: var(--color-e-hover);
+	color: var(--color-f-hover);
+}
+
+/* checkbox coding */
+
+.container {
+	background-color: var(--color-c);
+	display: flex;
+	border-radius: 4px;
+	align-items: center;
+	padding: 1rem;
+	margin: 0 25px 0 25px;
+	justify-content: space-between;
+}
+
+input[type="checkbox"] + label {
+	background-color: var(--color-c);
+	display: block;
+	margin: 0.2em;
+	cursor: pointer;
+	padding: 0.2em;
+}
+
+input[type="checkbox"] {
+	display: none;
+}
+
+input[type="checkbox"] + label:before {
+	content: "\2714";
+	border: 0.1em solid white;
+	border-radius: 45px;
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	padding-left: 0.2em;
+	padding-bottom: 0.2em;
+	margin-right: 0.2em;
+	vertical-align: middle;
+	color: transparent;
+	transition: 0.2s;
+}
+
+input[type="checkbox"] + label:active:before {
+	transform: scale(0);
+}
+
+input[type="checkbox"]:checked + label:before {
+	background-color: MediumSeaGreen;
+	border-color: MediumSeaGreen;
+	text-decoration: line-through;
+}
+
+input[type="checkbox"]:disabled + label:before {
+	transform: scale(1);
+	border-color: #aaa;
+	text-decoration: line-through;
+}
+
+input[type="checkbox"]:checked:disabled + label:before {
+	transform: scale(1);
+	background-color: var(--color-g);
+	border-color: var(--color-g);
+	text-decoration: line-through;
 }

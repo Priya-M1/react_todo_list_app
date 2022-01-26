@@ -8,13 +8,17 @@
 	--color-d: #4ecdc4;
 	--color-e: #ff6b6b;
 	--color-e-hover: rgb(248, 123, 123);
+	--color-f: #b33ceb;
+	--color-f-hover: #ba58e7;
+	--color-g: #3ceb8b;
+	--color-g-hover: #60d394;
 }
 
 * {
 	font-family: var(--font-b);
 	margin: 0;
 	padding: 0;
-	/* outline: 1px solid red; */
+	outline: 1px solid red;
 	background-color: var(--color-a);
 }
 

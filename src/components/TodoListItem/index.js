@@ -2,14 +2,17 @@ import "./styles.css";
 
 function TodoListItem({ todo, toggleComplete, handleDelete }) {
 	return (
-		<div className="todolistitem-div">
-			<div className="todolistitem-item">
+		<div className="container-div">
+			<div className="container">
 				<input
 					type="checkbox"
+					id={todo.id}
 					onChange={() => toggleComplete(todo.id)}
-					className="todolistitem-complete"
+					className="todolistitem-checkbox"
 				/>
-				<p className="todolistitem-desc">{todo.description}</p>
+				<label for={todo.id} className="todolistitem-desc">
+					{todo.description}
+				</label>
 				<button
 					onClick={() => handleDelete(todo.id)}
 					className="todolistitem-delete-button"
