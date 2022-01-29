@@ -10,9 +10,10 @@ function TodoListItem({ todo, toggleComplete, handleDelete }) {
 					onChange={() => toggleComplete(todo.id)}
 					className="todolistitem-checkbox"
 				/>
-				<label for={todo.id} className="todolistitem-desc">
+				<label for={todo.id} className="todolistitem-desc"></label>
+				<p className={todo.isComplete ? "complete" : "notComplete"}>
 					{todo.description}
-				</label>
+				</p>
 				<button
 					onClick={() => handleDelete(todo.id)}
 					className="todolistitem-delete-button"
