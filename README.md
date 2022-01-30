@@ -2,8 +2,6 @@
 
 ## A Brief Introduction
 
----
-
 This project is a simple react todo list app.
 The MVP requirements are that a user:
 
@@ -13,14 +11,10 @@ The MVP requirements are that a user:
 
 ## The App
 
----
-
 - The project is initialised with create-react-app
 - Nano ID to generate a unique string ID for each to do
 
 ## Components
-
----
 
 ### The Component Tree
 
@@ -90,8 +84,6 @@ A diagram of the component tree can be found [here](component_tree.drawio)
    - when the delete button is clicked call the delete function to delete item at this index
 
 ## What did I learn?
-
----
 
 - applying customised tyling to the checkbox using CSS
 - using ternary operator to assign the class of the todo item description, which then uses css to add the line through text decoration for the todo that is complete
