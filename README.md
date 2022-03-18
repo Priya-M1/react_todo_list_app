@@ -9,7 +9,7 @@ The MVP requirements are that a user:
 - can delete a todo to the todo to the list displayed on the view
 - change the status of a todo (marking a todo as complete)
 
-![Todo App](img/img_01.png)
+![Todo App](./img/img_01.png)
 
 ## The App
 
