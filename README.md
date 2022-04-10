@@ -3,6 +3,8 @@
 ## A Brief Introduction
 
 This project is a simple react todo list app.
+The deployed app can be viewed [here](https://priya-m1.github.io/react_todo_list_app/)
+
 The MVP requirements are that a user:
 
 - can add a todo to the todo to the list
